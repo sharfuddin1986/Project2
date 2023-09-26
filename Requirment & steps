@@ -19,5 +19,16 @@
  $ sudo apt update
  $ sudo apt install software-properties-common
  $ sudo add-apt-repository --yes --update ppa:ansible/ansible
- $ sudo apt install ansible
+ $ sudo apt install ansible 
+ $ cd .ssh/              ### copy the id_rsa.pub file contain and paste to the all machine under authorized_keys
+ $ sudo nanno /etc/ansible/hosts
+   [master]
+   private ip of k8-master
+   [slaves]
+   private ip of k8-slave1
+   private ip of k8-slave2
+ $ ansible -m ping all    ### Now i can ping all
+   sudo nano script1.sh   ### File is attached in repo
+
+
 
