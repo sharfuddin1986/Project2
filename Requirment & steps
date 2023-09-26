@@ -37,4 +37,39 @@
  $ ansible-playbook play.yml
 
 
+4- Machine-3 need to Configure kubernetes cluster
+
+ $ sudo kubeadm init       ### Its give the token to join worker node (machine 2 & 4)
+ $ mkdir -p $HOME/ .kube
+ $ sudo cp -i /etc/kubernetes/admin.conf $HOME/ .kube/config
+ $ sudo chown $(id -u):$(id -g) $HOME/ .kube/config
+ $ kubectl apply -f https://github.com/weavewrks/weave/releases/dowload/v2.8.1/weave-dameonset-k8s.yml
+ $ kubectl get no      ###   Ready state now 
+
+   Go to the worker node machine 2 and 4 paste the token with sudo after joined the cluster
+
+ $ kubectl get no     ### woker node is showing here 
+
+
+5- Machine-1 
+
+   setup the jenkins dashboad 
+   Add node->k8-master->remote root directory-/home/ubuntu/jenkins->launch via sssh-paste the private ip 
+   of machine3(kubernetes-cluster)->credential-add jenkins-usrname & password -ubuntu-paste the key->
+   non verrifing startegy->save
+
+   Manage jenkins->credential->under stores scoped to jenkins click global icon->add credential->
+   kind username & password -> username-docker hub accoount user name  and password -> create 
+
+6- Go to Github account and creat one repo
+   create dockerfile
+   FROM ubuntu/apache2
+   COPY . /var/www//html/
+   
+
+
+
+
+
+
 
