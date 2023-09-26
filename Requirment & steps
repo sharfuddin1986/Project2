@@ -31,6 +31,10 @@
  $ sudo nano script1.sh   ###  This script for jenkins installation in machine1 
  $ sudo nano script2.sh   ###  This script for K8-master installation for machine3 
  $ sudo nano script3.sh   ###  This script for K8-slave installation for machine2 & 4
+ $ sudo nano play.yml     ### File is attached in this repo
+ $ ansible-playbook play.yml --syntax-check
+ $ ansible-playbook play.yml --check
+ $ ansible-playbook play.yml
 
 
 
