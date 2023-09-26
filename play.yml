@@ -1,0 +1,19 @@
+---
+-  name:  install jenkins and java on machine1
+   become:  true
+   hosts:  localhost
+   tasks:
+   -  name:  runing script1
+      script:  script1.sh
+-  name:  install k8 and java on machine3
+   become:  true
+   hosts:  master
+   tasks:
+   -  name:  runing script2
+      script:  script2.sh
+-  name:  install k8slave on machine2 & 4
+   become:  true
+   hosts:  slaves
+   tasks:
+   -  name:  runing script3
+      script:  script3.sh
