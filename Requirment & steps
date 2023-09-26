@@ -7,5 +7,7 @@
    
 2- Machine-1 need to install terraform.
    https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
-   sudo nano main.tf
+   sudo nano main.tf     ### File is attached in repo
+
+
    
