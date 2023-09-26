@@ -5,7 +5,7 @@ provider "aws" {
 }
 resource "aws_instance" "K8s-master" {
     ami = "ami-024e6efaf93d85776"
-    instance_type = "t2.micro"
+    instance_type = "t2.medium"
     key_name  =  "NV"
     tags  =  {
       Name  =  "Machine-3"
