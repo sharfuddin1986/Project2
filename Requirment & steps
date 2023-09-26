@@ -2,12 +2,22 @@
 
 1- Create Four  Ec2 instance with ubuntu 20.04
    One for Jenkins/Ansible/Terraform t2 Medium type instance.  
-   One instance t2 large for Kubernetes Master .
+   One instance t2 medium for Kubernetes Master .
    Two  Ec2 instance t2 micro type for Replicas.
    
 2- Machine-1 need to install terraform.
    https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
-   sudo nano main.tf     ### File is attached in repo
+ $ sudo nano main.tf     ### File is attached in repo
+ $  terrafornm init
+ $  terraform plan
+ $  terraform apply
 
+   After K8-Master and slave is created
 
+3- Machine-1 need to install Ansible.
    
+ $ sudo apt update
+ $ sudo apt install software-properties-common
+ $ sudo add-apt-repository --yes --update ppa:ansible/ansible
+ $ sudo apt install ansible
+
