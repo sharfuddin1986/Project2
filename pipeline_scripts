@@ -1,0 +1,13 @@
+pipeline {
+    agent none
+    environment {
+        DOCKERHUB_CREDENTIALS=credentials('jenkins docker id')
+    }
+    stages {
+        stage('hello')
+          steps {
+               echo 'hello world'
+               }
+           }
+     }
+  }   
