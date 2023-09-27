@@ -26,6 +26,8 @@ Architectural Advice:
     Worker3: Java, Docker, Kubernetes    #Kubernetes cluster
     Worker4: Docker, Kubernetes          #worker node2  
     
+#  Diagram1
+
 ![Diagram](https://github.com/sharfuddin1986/Project2/assets/106474548/639d0098-3ae2-49a7-a7be-6c8d2ce1bf35)
 
 #  Diagram2
