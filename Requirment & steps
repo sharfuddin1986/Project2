@@ -6,8 +6,13 @@
    Two  Ec2 instance t2 micro type for Replicas.
    
 2- Machine-1 need to install terraform.
-   https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
- $ sudo nano main.tf     ### File is attached in repo
+   https://developer.hashicorp.com/terraform/downloads
+
+ $  wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+ $  sudo apt update && sudo apt install terraform
+32.00
+ $  sudo nano main.tf     ### File is attached in repo
  $  terrafornm init
  $  terraform plan
  $  terraform apply
