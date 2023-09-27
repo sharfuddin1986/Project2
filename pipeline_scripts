@@ -4,9 +4,25 @@ pipeline {
         DOCKERHUB_CREDENTIALS=credentials('jenkins docker id')
     }
     stages {
-        stage('hello')
+        stage('hello') {
           steps {
                echo 'hello world'
+               }
+           }
+         stage('Git ') {
+             agent {
+                  label 'K8s-master'
+          steps {
+               git 'url of git repo'
+               }
+           }
+         stage('Docker ') {
+             agent {
+                  label 'K8s-master'
+          steps {
+               bash 'sudo docker build /home/ubuntu/jenkins/workspace/testpipeline -t dockerhubaccountname/project2'
+               bash 'sudo echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'  
+               bash 'sudo docker push dockerhubaccountname/project2
                }
            }
      }
