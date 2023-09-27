@@ -31,8 +31,6 @@ pipeline {
           steps {
                sh 'kubectl appy -f deployment.yml'    ### file is attached in this repo
                sh 'kubectl appy -f service.yml'       ### file is attached in this repo
-               sh 'sudo echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'  
-               sh 'sudo docker push dockerhubaccountname/project2
                }
            }
      }
