@@ -27,3 +27,5 @@ Architectural Advice:
     Worker4: Docker, Kubernetes           #worker node2  
     
     
+    ![Diagram](https://github.com/sharfuddin1986/Project2/assets/106474548/688a5da7-9782-4e34-840d-80fb7a4aab13)
+
