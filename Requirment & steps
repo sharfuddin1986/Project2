@@ -77,8 +77,14 @@
 
    After Run this job create image and push to dockerhub account automatically.
 
-8-  One more step add in script for deply 
+8-  One more step add in script for deployoyment service.yml and deployment.yml
+    Run the job  after that can see web page is open through machine2 and machine4 with port 30008
 
+    Enable gitwebhook for any upadate in git repo automatically build job and deploy
+   if again run this job it will give error file is exist alreay need to add one line in sript only.
+   sh  
 
+    
+  
 
 
