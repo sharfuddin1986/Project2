@@ -67,7 +67,13 @@
    COPY . /var/www//html/
    
 6- Go to jenkins dashboard create job
-   testpipeline-pipeline-script -hello world  1.40
+   testpipeline-pipeline-script -hello world  1.40-> after run the job then output cansole genereate the password dockerhub
+   define the task under script in testpipeline
+   
+   a-test task-hello
+   b-clone git hub repo and create folder name testpipe under this folder /home/ubuntu/jenkins
+   c-build and push image to docker hub account
+   d-crate deployment for service k8slave
 
 
 
