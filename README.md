@@ -16,4 +16,12 @@ Following are the specifications of the lifecycle:
 5.	Create a Jenkins Pipeline script to accomplish the above task.
 6.	For configuration management of the infrastructure, you need to deploy the configuration on the servers to install necessary software 
     and configurations.
+7.	Using Terraform, accomplish the task of infrastructure creation in the AWS cloud provider.
 
+Architectural Advice:
+
+    Softwares to be installed on the respective machines using configuration management.
+    Worker1: Jenkins, Java               #Terraform+Ansible+jenkis master machine
+    Worker2: Docker, Kubernetes          #worker node1
+    Worker3: Java, Docker, Kubernetes    #Kubernetes cluster
+    Worker4: Docker, Kubernetes           #worker node2  
