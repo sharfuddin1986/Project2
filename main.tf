@@ -9,7 +9,7 @@ resource "aws_instance" "K8s-Master" {
   instance_type = "t2.medium"
   key_name  = "NV"
   tags  = {
-    key_name  = "Machine-3"
+    Name  = "Machine-3"
   }
 }
 
@@ -18,7 +18,7 @@ resource "aws_instance" "K8s-Slave-1" {
   instance_type = "t2.micro"
   key_name  = "NV"
   tags  = {
-    key_name  = "Machine-2"
+    Name  = "Machine-2"
   }
 }
 
@@ -27,6 +27,6 @@ resource "aws_instance" "K8s-Slave-2" {
   instance_type = "t2.micro"
   key_name  = "NV"
   tags  = {
-    key_name  = "Machine-4"
+    Name  = "Machine-4"
   }
 }
