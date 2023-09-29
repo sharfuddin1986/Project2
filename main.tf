@@ -2,7 +2,7 @@ provider "aws" {
     region = "us-east-2"
     access_key = "your_Acess_key"
     secret_key = "your_Secret_key"
-}
+    }
 resource "aws_instance" "K8s-master" {
     ami = "ami-024e6efaf93d85776"
     instance_type = "t2.medium"
