@@ -93,7 +93,13 @@
    second task ### Git clone of the git repository
    
    define the task under script in testpipeline   #### Script file is attached in repo
+   After that Job run sucessfully
    
+
+   Third task ### Build the image and docker hub account login
+
+   
+
    a-test task-hello
    b-clone git hub repo and create folder name testpipe under this folder /home/ubuntu/jenkins
    c-build and push image to docker hub account
