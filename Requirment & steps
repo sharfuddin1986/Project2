@@ -89,7 +89,11 @@
 }
 
 
-   after run the job then output cansole genereate the password dockerhub
+   after that  run the job then output cansole sucessfully hello world print
+   Then we add the task 
+
+
+genereate the password dockerhub
    define the task under script in testpipeline   #### Script file is attached in repo
    
    a-test task-hello
