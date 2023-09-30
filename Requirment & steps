@@ -73,31 +73,20 @@
    
 7- Go to jenkins dashboard create job
    testpipeline-pipeline-script -hello world  1.40-> write this script
-
-   pipeline {
-    agent none
-    environment {
-        DOCKERHUB_CREDENTIALS=credentials('30270a8d-078e-44f9-b2ed-92d417dabffd')
-    }
-    stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
-    }
-}
-
-
-   After that  run the job then output cansole sucessfully Hello world print
-   second task ### Git clone of the git repository
    
-   define the task under script in testpipeline   #### Script file is attached in repo
+   First task ### Hello world display only
+   define the task under script in testpipeline   #### Script file is job1_pipeline_script is attached in repo
+   After that  run the job then output cansole sucessfully Hello world print
+   
+   
+   second task ### Git clone of the git repository
+   define the task under script in testpipeline   #### Script file is job2_pipeline_script is attached in repo
    After that Job run sucessfully
    
 
-   Third task ### Build the image and docker hub account login
-
+   Third task ### Build the image and Push to docker hub account with login
+   define the task under script in testpipeline   #### Script file is job3_pipeline_script is attached in repo
+   After that Job run sucessfully
    
 
    a-test task-hello
