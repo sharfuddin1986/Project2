@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: dockerhubaccount/project2:latest
+        image: sharfuddin1986/project2:latest
         ports:
         - containerPort: 80
