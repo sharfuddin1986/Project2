@@ -59,8 +59,8 @@
 
    setup the jenkins dashboad 
    Add node->k8-master->remote root directory-/home/ubuntu/jenkins->launch via sssh-paste the private ip 
-   of machine3(kubernetes-cluster)->credential-add jenkins-usrname & password -ubuntu-paste the key->
-   non verrifing startegy->save
+   of machine3(kubernetes-cluster)->credential-add-launch agent via ssh- jenkins-usrname & password-ubuntu
+   (paste id_rsa & id_rsa.pub key file of machine-1) -ubuntu-paste the key->non verifiying startegy->save
 
    Manage jenkins->credential->under stores scoped to jenkins click global icon->add credential->
    kind username & password -> username-docker hub accoount user name  and password -> create 
