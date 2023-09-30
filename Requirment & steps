@@ -88,6 +88,7 @@
     }
 }
 
+
    after run the job then output cansole genereate the password dockerhub
    define the task under script in testpipeline   #### Script file is attached in repo
    
