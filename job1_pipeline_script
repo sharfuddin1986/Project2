@@ -1,7 +1,7 @@
 pipeline {
 	 agent none
 	 environment {
-	 	 DOCKERHUB_CREDENTIALS=credentials('Put the credentail here')
+	 	 DOCKERHUB_CREDENTIALS=credentials('Your credential')
 	 }
 	 stages {
 	 	stage('Hello') {
@@ -9,5 +9,3 @@ pipeline {
 	 		 	 echo 'Hello world'
 	 		 }
 	 	}
-    }
-}
