@@ -1,1 +1,9 @@
-
+stage('k8s') {
+	 	    agent {
+	 	        label 'K8s-Master'
+	 	    }
+	 		 steps {
+	 		 	 sh 'kubectl apply -f deployment.yml'
+	 		 	 sh 'kubectl apply -f service.yml'
+	 		 } 
+	 	}
