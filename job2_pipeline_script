@@ -1,9 +1,9 @@
 stage('Git') {
-	 	    agent {
-	 	        label 'K8s-Master'
-	 	    }
-	 		 steps {
-	 		 	 git branch: 'main', credentialsId: 'your credential id', url: 'https://github.com/sharfuddin1986/Project2.git'
-	 		 }
-	 	}
+     agent {
+	label 'K8s-Master'
+     }
+      steps {
+	  git branch: 'main', credentialsId: 'bfa661f7-b7c7-43ab-af44-6d60fa4ea6ad', url: 'https://github.com/sharfuddin1986/Project2.git'
+      }
 }
+	 	
