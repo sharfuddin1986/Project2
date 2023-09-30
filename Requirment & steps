@@ -96,9 +96,8 @@
    After that Job run sucessfully
    After Run this job create image and push to dockerhub account automatically
    
-
-   
-8-  One more step add in script for deployoyment service.yml and deployment.yml
+8-  Create deployoyment.yml and  service.yml file in git repo.  ###### File is attached in this repo
+     
     Run the job  after that can see web page is open through machine2 and machine4 with port 30008
 
     Enable gitwebhook for any upadate in git repo automatically build job and deploy
