@@ -101,9 +101,14 @@
     Run the job  after that can see web page is open through machine2 and machine4 with port 30008
 
     Enable gitwebhook for any upadate in git repo automatically build job and deploy
-    if again run this job it will give error file is exist alreay need to add one line in script only.
-   
+    if again run this job it will give error file is nginx-deployment file is already exist
+    then need to add one line for delete old container and create new then use this line.
+
     sh 'kubectl delete deploy nginx-deployment'
+
+
+    After that i can see updated webpage.
+
 
     
   
