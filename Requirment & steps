@@ -91,7 +91,9 @@
 
    after that  run the job then output cansole sucessfully hello world print
    Then we add the task 
-
+   second task ### Git clone of the git repository
+   
+   
 
 genereate the password dockerhub
    define the task under script in testpipeline   #### Script file is attached in repo
