@@ -1,1 +1,10 @@
-
+	stage('Docker') {
+	 	    agent {
+	 	        label 'K8s-Master'
+	 	    }
+	 		 steps {
+	 		 	 sh 'sudo docker build /home/ubuntu/jenkins/workspace/Testpipeline --tag sharfuddin1986/project2'
+	 		 	 sh 'sudo echo $DOCKERHUB_CREDENTIALS_PSW | sudo docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
+	 		 	 sh 'sudo docker push sharfuddin1986/project2'
+	 		 } 
+	 	}
