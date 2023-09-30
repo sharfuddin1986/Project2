@@ -71,7 +71,14 @@
    FROM ubuntu/apache2
    COPY . /var/www//html/
    
-7- Go to jenkins dashboard create job
+7- Go to jenkins dashboard create following job
+
+   a-test task-hello
+   b-clone git hub repo and create folder name testpipe under this folder /home/ubuntu/jenkins
+   c-build and push image to docker hub account
+   d-crate deployment for service k8slave
+
+
    testpipeline-pipeline-script -hello world  1.40-> write this script
    
    First task ### Hello world display only
@@ -87,15 +94,10 @@
    Third task ### Build the image and Push to docker hub account with login
    define the task under script in testpipeline   #### Script file is job3_pipeline_script is attached in repo
    After that Job run sucessfully
+   After Run this job create image and push to dockerhub account automatically
    
 
-   a-test task-hello
-   b-clone git hub repo and create folder name testpipe under this folder /home/ubuntu/jenkins
-   c-build and push image to docker hub account
-   d-crate deployment for service k8slave
-
-   After Run this job create image and push to dockerhub account automatically.
-
+   
 8-  One more step add in script for deployoyment service.yml and deployment.yml
     Run the job  after that can see web page is open through machine2 and machine4 with port 30008
 
