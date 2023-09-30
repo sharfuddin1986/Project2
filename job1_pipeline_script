@@ -1,0 +1,13 @@
+pipeline {
+	 agent none
+	 environment {
+	 	 DOCKERHUB_CREDENTIALS=credentials('Put the credentail here')
+	 }
+	 stages {
+	 	stage('Hello') {
+	 		 steps {
+	 		 	 echo 'Hello world'
+	 		 }
+	 	}
+    }
+}
