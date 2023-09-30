@@ -63,7 +63,8 @@
    (paste id_rsa & id_rsa.pub key file of machine-1) -ubuntu-paste the key->non verifiying startegy->save
 
    Manage jenkins->credential->under stores scoped to jenkins click global icon->add credential->
-   kind username & password -> username-docker hub accoount user name  and password -> create 
+   kind username & password -> username-docker hub accoount user name  and password -> create after u will get one
+   id it will use for create pipe line save this id 
 
 6- Go to Github account and creat one repo
    create dockerfile
