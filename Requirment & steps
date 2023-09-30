@@ -72,7 +72,23 @@
    COPY . /var/www//html/
    
 7- Go to jenkins dashboard create job
-   testpipeline-pipeline-script -hello world  1.40-> after run the job then output cansole genereate the password dockerhub
+   testpipeline-pipeline-script -hello world  1.40-> write this script
+
+   pipeline {
+    agent none
+    environment {
+        DOCKERHUB_CREDENTIALS=credentials('30270a8d-078e-44f9-b2ed-92d417dabffd')
+    }
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+
+   after run the job then output cansole genereate the password dockerhub
    define the task under script in testpipeline   #### Script file is attached in repo
    
    a-test task-hello
